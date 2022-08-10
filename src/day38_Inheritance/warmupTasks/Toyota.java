@@ -12,9 +12,6 @@ public class Toyota extends Car {
     public static void main(String[] args) {
         Toyota toyota1 = new Toyota("Land Cruiser", 2018, 40000, "White", 150000);
 
-        toyota1.start();
-        toyota1.reliable();
-
 
     }
 
