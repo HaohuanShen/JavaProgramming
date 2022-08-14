@@ -32,12 +32,23 @@ public class Student extends Person {
 
     public Student(String name, int age, char gender, int studentId, String fieldOfStudy) {
         super(name, age, gender);
-        this.studentId = studentId;
-        this.fieldOfStudy = fieldOfStudy;
+        setStudentId(studentId);
+        setFieldOfStudy(fieldOfStudy);
     }
 
     public void study() {
         System.out.println(getName() + " " + getGender() + " " + getAge() + " " + getStudentId()
                 + " is studying " + getFieldOfStudy());
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + getName() + '\'' +
+                ", age=" + getAge() +
+                ", gender=" + getGender() +
+                ", studentId=" + studentId +
+                ", fieldOfStudy='" + fieldOfStudy + '\'' +
+                '}';
     }
 }
