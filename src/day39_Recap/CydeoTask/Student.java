@@ -23,7 +23,7 @@ public class Student extends Person {
     }
 
     public void setFieldOfStudy(String fieldOfStudy) {
-        if (!(fieldOfStudy == null || fieldOfStudy.isBlank() || fieldOfStudy.isEmpty())) {
+        if (fieldOfStudy == null || fieldOfStudy.isBlank() || fieldOfStudy.isEmpty()) {
             System.err.println("Invalid field of study");
             System.exit(1);
         }
@@ -37,8 +37,7 @@ public class Student extends Person {
     }
 
     public void study() {
-        System.out.println(getName() + " " + getGender() + " " + getAge() + " " + getStudentId()
-                + " is studying " + getFieldOfStudy());
+        System.out.println(getName() + " is studying " + getFieldOfStudy());
     }
 
     @Override
