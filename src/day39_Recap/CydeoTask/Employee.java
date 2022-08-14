@@ -19,6 +19,10 @@ public class Employee extends Person {
     }
 
     public void setJobTitle(String jobTitle) {
+        if (jobTitle == null || jobTitle.isEmpty() || jobTitle.isBlank()) {
+            System.err.println("Invalid job title");
+            System.exit(1);
+        }
         this.jobTitle = jobTitle;
     }
 
