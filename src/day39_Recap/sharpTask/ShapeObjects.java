@@ -16,6 +16,16 @@ public class ShapeObjects {
 
         System.out.println("square = " + square);
 
+        System.out.println("------------------------------");
+
+        square.setSide(5);
+
+        System.out.println("square = " + square);
+
+        square.setSide(-5);
+
+        System.out.println("square = " + square);
+
 
     }
 
