@@ -35,8 +35,8 @@ public class  Square extends Sharp{
     public String toString() {
         return "Square{" +
                 "side=" + side +
-                ", perimeter=" + perimeter() +
-                ", area=" + area() +
+                ", perimeter=" + perimeter() +'\'' +
+                ", area=" + area() +'\'' +
                 '}';
     }
 }

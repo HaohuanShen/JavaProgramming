@@ -48,9 +48,9 @@ public class Rectangle extends Sharp{
     public String toString() {
         return "Rectangle{" +
                 "length=" + length +
-                ", width=" + width +
-                ", area=" + area() +
-                ", perimeter=" + perimeter() +
+                ", width=" + width +'\'' +
+                ", area=" + area() +'\'' +
+                ", perimeter=" + perimeter() +'\'' +
                 '}';
     }
 }
